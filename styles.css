@@ -131,6 +131,8 @@ span {
 .hero h2 {
   width: 800px;
 } 
-
+.info img{
+  max-width: 800px;
+}
 
 }
