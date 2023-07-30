@@ -1,5 +1,4 @@
-/* 右の仕様を満たすようにメディアクエリーを使って実装してみましょう */
-/* この課題ではモバイルファーストで組み上げください */
+/* common */
 
 body {
   margin: 0;
@@ -11,6 +10,7 @@ body {
   margin: 0 auto;
   }
 /* header */
+
 header {
   background: bisque;
   padding: 0 16px;
@@ -52,6 +52,7 @@ i {
 .hero img {
   width: 100%;
 }
+
 /* features */
 
 .features {
@@ -72,17 +73,18 @@ i {
 .feature p {
   padding-left: 16px;
   margin-top: 16px;
-}
+
+
 /* info */
 .info img{
   width: 100%;
 }
+  
 dt {
   font-size: 18px;
   font-weight: bold;
   margin-top: 16px;
 }
-
 
 /* footer */
 
@@ -96,7 +98,6 @@ footer {
 small {
   font-size: 14px;
 }
-
 
 /* width >= 600 */
 @media (min-width: 600px) {
