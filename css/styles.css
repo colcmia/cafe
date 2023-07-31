@@ -1,0 +1,136 @@
+/* 右の仕様を満たすようにメディアクエリーを使って実装してみましょう */
+/* この課題ではモバイルファーストで組み上げください */
+
+body {
+  margin: 0;
+}
+.container {
+  padding: 0 16px;
+  max-width: 800px;
+  width: calc(100% - 16px - 16px);
+  margin: 0 auto;
+  }
+/* header */
+header {
+  background: bisque;
+  padding: 0 16px;
+  height: 80px;
+  box-shadow: 0 1px 8px #2d1f06;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-pc {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: #2d1f06;
+}
+img {
+  vertical-align: bottom;
+}
+h1 {
+  font-size: 0;
+}
+i {
+  font-size: 32px;
+}
+.twitter:hover {
+  color: #1da1f2;
+}
+.instagram:hover {
+  color:#fd1d1d;
+}
+.line:hover {
+  color: #00c300;
+}
+.pc-menu {
+  display: none;
+} 
+
+.hero img {
+  width: 100%;
+}
+/* features */
+
+.features {
+  padding: 32px 0;
+  line-height: 1.6;
+}
+
+.feature {
+  margin-top: 32px;
+}
+
+.pic {
+  width: auto;
+  text-align: center;
+}
+
+.feature h3,
+.feature p {
+  padding-left: 16px;
+  margin-top: 16px;
+}
+/* info */
+.info img{
+  width: 100%;
+}
+dt {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+
+/* footer */
+
+footer {
+  background: bisque;
+  padding: 64px 0;
+  text-align: center;
+  box-shadow: 0 -1px 8px #2d1f06;
+}
+
+small {
+  font-size: 14px;
+}
+
+
+/* width >= 600 */
+@media (min-width: 600px) {
+.logo-sp {
+  display: none;
+}
+.logo-pc {
+  display: inline;
+}
+.sp-menu {
+  display: none;
+}
+.pc-menu {
+  display: flex;
+  gap: 16px;
+  }
+span {
+    display: none;
+  }
+.feature {
+    display: flex;
+  }
+
+}
+
+/* width >= 800 */
+@media (min-width: 800px) {
+span {
+    display: inline;
+  }
+
+.hero h2 {
+  width: 800px;
+} 
+
+
+}
